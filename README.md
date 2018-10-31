@@ -7,7 +7,7 @@ You can find:
 - My socials 👥
 - Some short description of my important projects 💻
 
-[Know me better](https://j4nn0.github.io.)
+What are you waiting for? [Know me better](https://j4nn0.github.io.)!
 
 # To do
 
