@@ -12,7 +12,7 @@ What are you waiting for? [Know me better](https://j4nn0.github.io.)!
 # To do
 
 - [X] Social
-- [] Personal photo e short description
+- [ ] Personal photo e short description
 - [X] Quotes and more
 - [X] Sidebar
 
