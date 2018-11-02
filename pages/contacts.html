@@ -17,6 +17,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Images -->
     <link rel="icon" href="../img/jdr4v3n.png">
+    <!-- Contact Form -->
+    <link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" /> 
+    <link href="../css/form.css" rel="stylesheet">
 </head>
 <body>
    
@@ -24,39 +27,42 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" href="#">Federico Gianno</a>
-  		
+      
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    		    <span class="navbar-toggler-icon"></span>
-  		    </button>
+            <span class="navbar-toggler-icon"></span>
+            </button>
 
-  		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-    		<ul class="navbar-nav mr-auto">
-		    	<li class="nav-item active">
-		        	<a class="nav-link" href="#">J4NN0<span class="sr-only">(current)</span></a>
-		      	</li>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+              <a class="nav-link" href="#">J4NN0<span class="sr-only">(current)</span></a>
+            </li>
         </ul>
           <div class="pull-right redes">
             <ul class="navbar-nav">
-		      	<li class="nav-item">
-		        	<a class="nav-link" href="https://www.facebook.com/giannofederico"><span class="fa fa-facebook"></span></a>
-		      	</li>
-		      	<li class="nav-item">
-		        	<a class="nav-link" href="https://twitter.com/giannofederico"><span class="fa fa-twitter"></span></a>
-		      	</li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.facebook.com/giannofederico"><span class="fa fa-facebook"></span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://twitter.com/giannofederico"><span class="fa fa-twitter"></span></a>
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="https://www.instagram.com/federico_gianno"><span class="fa fa-instagram"></span></a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="https://www.youtube.com/channel/UC_lI0Z3CnnWLKCZkOR8Z1oQ"><span class="fa fa-youtube"></span></a>
+            </li>
+             <li class="nav-item">
               <a class="nav-link" href="https://github.com/J4NN0"><span class="fa fa-github"></span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="https://www.youtube.com/channel/UC_lI0Z3CnnWLKCZkOR8Z1oQ"><span class="fa fa-youtube"></span></a>
+              <a class="nav-link" href="https://www.linkedin.com/in/gianno-federico/"><span class="fa fa-linkedin"></span></a>
             </li>
           </ul>
           </div>
-  		</div>
-    </div>
-	</nav>
+      </div>
+      </div>
+    </nav>
 
  	<div id="wrapper">
 
@@ -88,18 +94,84 @@
             <i class="fa fa-envelope-o"></i>
             <span>Contacts</span></a>
         </li>
-  </ul> 
+    </ul> 
 
     <!--- Container --->
     <div class="container"><br>
         <div class="jumbotron p-3 text-center">
             <h1 class="display-4">Contacts</h1><hr>
             <p class="lead"></p>
-            <p>Work in progress ...
+            <p>
+              Contact me on my social media sending me a message on <a href="https://www.facebook.com/giannofederico">Facebook</a> or <a href="https://twitter.com/giannofederico">Twitter.</a>
             </p>
+            <p>
+              Or just sent me an e-mail on <a href="mailto:giannofederico@gmail.com">Gmail</a> or on my <a href="mailto:s255548@studenti.polito.it">PoliTO</a> account, my institutional e-mail.
+            </p>
+            <p>
+              Or complete this from
+            </p>
+            <div class="bootstrap-iso">
+             <div class="container-fluid">
+              <div class="row">
+               <div class="col-md-6 col-sm-6 col-xs-12">
+                <form class="form-horizontal" action="https://formspree.io/giannofederico@gmail.com" method="POST">
+                 <div class="form-group ">
+                  <label class="control-label col-sm-2" for="name">
+                   Name
+                  </label>
+                  <div class="col-sm-10">
+                   <input class="form-control" id="name" name="name" placeholder="Enter name" type="text"/>
+                  </div>
+                 </div>
+                 <div class="form-group ">
+                  <label class="control-label col-sm-2 requiredField" for="email">
+                   Email
+                   <span class="asteriskField">
+                    *
+                   </span>
+                  </label>
+                  <div class="col-sm-10">
+                   <input class="form-control" id="email" name="email" placeholder="e-mail address" type="text"/>
+                  </div>
+                 </div>
+                 <div class="form-group ">
+                  <label class="control-label col-sm-2 requiredField" for="subject">
+                   Subject
+                   <span class="asteriskField">
+                    *
+                   </span>
+                  </label>
+                  <div class="col-sm-10">
+                   <input class="form-control" id="subject" name="subject" placeholder="E-mail subject" type="text"/>
+                  </div>
+                 </div>
+                 <div class="form-group ">
+                  <label class="control-label col-sm-2 requiredField" for="message">
+                   Message
+                   <span class="asteriskField">
+                    *
+                   </span>
+                  </label>
+                  <div class="col-sm-10">
+                   <textarea class="form-control" cols="40" id="message" name="message" rows="10"></textarea>
+                  </div>
+                 </div>
+                 <div class="form-group">
+                  <div class="col-sm-10 col-sm-offset-2">
+                   <button class="btn btn-success " name="submit" type="submit">
+                    Send Email
+                   </button>
+                  </div>
+                 </div>
+                </form>
+               </div>
+              </div>
+             </div>
+            </div>
         </div>
-	  </div>
+    </div>
   </div>
+
 
     <hr>
 

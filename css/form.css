@@ -1,0 +1,39 @@
+.bootstrap-iso 
+.form-group button, 
+.bootstrap-iso form input.form-control, 
+.bootstrap-iso form textarea.form-control, 
+.bootstrap-iso form select.form-control, 
+.bootstrap-iso form .form-group-lg input.form-control, 
+.bootstrap-iso form .form-group-lg textarea.form-control, 
+.bootstrap-iso form .form-group-lg select.form-control, 
+.bootstrap-iso form .form-group-sm input.form-control, 
+.bootstrap-iso form .form-group-sm textarea.form-control, 
+.bootstrap-iso form .form-group-sm select.form-control
+{
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+   border-radius: 20px;
+}
+   
+.bootstrap-iso .formden_header h2,
+.bootstrap-iso .formden_header p, 
+.bootstrap-iso form
+{
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000000;
+}
+.bootstrap-iso form button, 
+.bootstrap-iso form button:hover
+{
+  color: #ffffff !important; /*send text color*/
+}
+.asteriskField
+{
+  color: red;
+}
+.bootstrap-iso form .input-group-addon {
+  color:#343a40; 
+  background-color: #343a40; 
+  border-radius: 20px; 
+  padding-left:15px
+}
