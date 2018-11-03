@@ -15,10 +15,12 @@ What are you waiting for? [Know me better](https://j4nn0.github.io.)!
 - [X] Sidebar
 - [X] Footer with quote
 - [X] Home
-- [ ] Personal photo and short description
+- [ ] Short description
+- [ ] Personal photo
 - [X] About
-- [ ] Contacts
-- [ ] CV
+- [X] Contacts
+- [ ] Form e-mail
+- [X] CV
 - [ ] Projects
 
 # More
