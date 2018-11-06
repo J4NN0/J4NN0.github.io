@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<style>
-</style>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -10,12 +8,12 @@
     
     <title>J4NN0</title>
     
-    <!-- jQuery 1.x snippet: -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!-- Latest compiled and minified JavaScript -->
-    <script type="text/javascript" src="../vendor/js/bootstrap.min.js"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" type="text/css" href="../vendor/css/bootstrap.min.css">
+    <!-- Bootstrap JS - Latest compiled and minified JavaScript -->
+    <script type="../text/javascript" src="../vendor/js/bootstrap.min.js"></script>
+    <!-- jQuery 1.x snippet: -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- CSS files -->
     <link href="../css/main_style.css" rel="stylesheet">
     <link href="../css/sidebar.css" rel="stylesheet">
@@ -98,27 +96,46 @@
             <i class="fa fa-envelope-o"></i>
             <span>Contacts</span></a>
         </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="white_hat.html">
+            <i class="fa fa-user-secret"></i>
+            <span>Hacking</span></a>
+        </li>
     </ul> 
 
     <!--- Container --->
     <div class="container"><br>
         <div class="jumbotron p-3">
-            <h1 class="display-4 text-center">White-Hat guide</h1><hr>
+            <h1 class="display-4 text-center">White Hat</h1><hr>
             <nav>
               <div class="nav nav-tabs" id="nav-tab" role="tablist">
                 <a class="nav-item nav-link active text-dark" id="nav-info-tab" data-toggle="tab" href="#nav-info" role="tab" aria-controls="nav-info" aria-selected="true">Info</a>
                 <a class="nav-item nav-link text-dark" id="nav-wps-tab" data-toggle="tab" href="#nav-wps" role="tab" aria-controls="nav-wps" aria-selected="false">WPS cracking</a>
-                <a class="nav-item nav-link text-dark" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</a>
+                <a class="nav-item nav-link text-dark" id="nav-wep-tab" data-toggle="tab" href="#nav-wep" role="tab" aria-controls="nav-wep" aria-selected="false">WEP cracking</a>
               </div>
             </nav>
             <div class="tab-content" id="nav-tabContent">
-              <div class="tab-pane fade show active" id="nav-info" role="tabpanel" aria-labelledby="nav-info-tab">a</div>
-              <div class="tab-pane fade" id="nav-wps" role="tabpanel" aria-labelledby="nav-wps-tab">b</div>
-              <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">c</div>
-            </div>
+              <div class="tab-pane fade show active" id="nav-info" role="tabpanel" aria-labelledby="nav-info-tab">
+                <p>
+                <div class="alert alert-danger">
+                  <strong>Note:</strong> this repo is for educational purposes only. No contributors, major or minor, are to fault for any actions done by following this guide.
+                </div>
+                </p>
+                <p>
+                  From <a href="https://en.wikipedia.org/wiki/White_hat_(computer_security)">Wikipedia: </a>The term "white hat" in Internet slang refers to an ethical computer hacker, or a computer security expert, who specializes in penetration testing and in other testing methodologies that ensures the security of an organization's information systems. Contrasted with black hat, a malicious hacker, the name comes from Western films, where heroic and antagonistic cowboys might traditionally wear a white and a black hat respectively. While a white hat hacker hacks under good intentions with permission, and a black hat hacker has malicious intent, there is a third kind known as a grey hat hacker who hacks with good intentions without permission.
+                </p>
+              </div>
+
+              <div class="tab-pane fade" id="nav-wps" role="tabpanel" aria-labelledby="nav-wps-tab">
+                Work in progress...
+              </div>
+
+              <div class="tab-pane fade" id="nav-wep" role="tabpanel" aria-labelledby="nav-wep-tab">
+                Work in progress...</div>
+              </div>
+        </div>
       </div>
     </div>
-  </div>
 
   <!--- Footer --->
   <footer class="text-center p-3 footer bg-dark">

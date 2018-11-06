@@ -10,9 +10,15 @@
     
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" type="text/css" href="vendor/css/bootstrap.min.css">
+    <!-- Bootstrap JS - Latest compiled and minified JavaScript -->
+    <script type="text/javascript" src="vendor/js/bootstrap.min.js"></script>
+    <!-- jQuery 1.x snippet: -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- CSS files -->
     <link href="css/main_style.css" rel="stylesheet">
     <link href="css/sidebar.css" rel="stylesheet">
+    <!-- JS files -->
+    <script type="text/javascript" src="js/utility.js"></script>
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Images -->
@@ -92,6 +98,11 @@
             <i class="fa fa-envelope-o"></i>
             <span>Contacts</span></a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="pages/white_hat.html">
+            <i class="fa fa-user-secret"></i>
+            <span>Hacking</span></a>
+        </li>
 	</ul>	
 
     <!--- Container --->
@@ -101,12 +112,10 @@
             <p class="lead">
               My name is Federico Gianno and I'm a Software Engineering student at PoliTO</p>
             <p>
-              Undegraduate Computer Engineer, Msc student currently at second year of Computer Engineer at Politecnico di Torino. Passionate about Optimization
-              Method and Algorithm, Machine Learning, Data Science, Clouds. Oriented toward challenges that require strong problem solving skills.
-              Always improving soft skills and teamwork attitude.
+              Undegraduate Computer Engineer, Msc student currently at second year of Computer Engineer at Politecnico di Torino. Passionate about Optimization Method and Algorithm, Machine Learning, Data Science, Clouds. Oriented toward challenges that require strong problem solving skills. Always improving soft skills and teamwork attitude.
 			     </p>
            <p>
-             Above you can find the last projects I'm working on
+             Above you can find the latest projects I'm working on
            </p>
         </div>
 
@@ -117,14 +126,15 @@
 	        <div class="card">
 	            <h4 class="card-header bg-dark text-white">ETS
 	                <div class="float-right small">
-	                    <a class="btn btn-raised btn-danger" href="#" title="Share this project" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
-	                        <i class="fa fa-share-alt-square" aria-hidden="true"></i>
-	                        </a>
-	                        <a class="btn btn-raised btn-danger" href="mailto:giannofederico@gmail.com" title="Send message">
-	                        <i class="fa fa-envelope" aria-hidden="true"></i>
-	                        </a>
-	                        <a class="btn btn-raised btn-danger" href="#" title="Check out on GitHub">
-	                        <i class="fa fa-eye" aria-hidden="true"></i>
+                    <p id="p1" hidden>https://github.com/ETS-PoliTO</p> 
+	                   <a class="btn btn-raised btn-danger" onclick="copyToClipboard('#p1')" title="Share this project" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+	                      <i class="fa fa-share-alt-square" aria-hidden="true"></i>
+                        </a>
+                        <a class="btn btn-raised btn-danger" href="mailto:giannofederico@gmail.com" title="Contact me">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        </a>
+                        <a class="btn btn-raised btn-danger" href="#" title="Check out on GitHub">
+                        <i class="fa fa-eye" aria-hidden="true"></i>
 	                    </a>
 	                </div>
 	            </h4>
@@ -143,10 +153,11 @@
 	        <div class="card">
 	            <h4 class="card-header text-right bg-dark text-white">Telegram BOT
 	                <div class="float-left small">
-	                    <a class="btn btn-raised btn-danger" href="#" title="Share this project" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                      <p id="p2" hidden>https://github.com/J4NN0/j4nn0-b0t</p> 
+	                    <a class="btn btn-raised btn-danger" onclick="copyToClipboard('#p2')" title="Share this project" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
 	                    <i class="fa fa-share-alt-square" aria-hidden="true"></i>
 	                    </a>
-	                    <a class="btn btn-raised btn-danger" href="mailto:giannofederico@gmail.com" title="Send message">
+	                    <a class="btn btn-raised btn-danger" href="mailto:giannofederico@gmail.com" title="Contact me">
 	                    <i class="fa fa-envelope" aria-hidden="true"></i>
 	                    </a>
 	                    <a class="btn btn-raised btn-danger" href="https://github.com/J4NN0/j4nn0-b0t" title="Check out on GitHub">
@@ -172,11 +183,6 @@
   <footer class="text-center p-3 footer bg-dark">
       <p class="text-white"><q>A bug is never just a mistake. It represents something bugger. An error of thinking, that makes you who you really are</q></p>
   </footer>
-  
-  <!-- jQuery 1.x snippet: -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <!-- Latest compiled and minified JavaScript -->
-  <script type="text/javascript" src="vendor/js/bootstrap.min.js"></script>
 
 </body>
 </html>
