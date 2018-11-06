@@ -32,17 +32,18 @@ p {
     <!--- Header --->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="#">Federico Gianno</a>
-      
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-              <a class="nav-link" href="#">J4NN0<span class="sr-only">(current)</span></a>
-            </li>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="../index.html">Home<span class="sr-only"></span></a>
+                </li>
+              </ul>
+            </div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
         </ul>
           <div>
             <ul class="navbar-nav">
@@ -66,7 +67,7 @@ p {
             </li>
           </ul>
           </div>
-      </div>
+        </div>
       </div>
     </nav>
 
@@ -106,6 +107,8 @@ p {
     <div class="container"><br>
         <div class="jumbotron p-3">
             <h1 class="display-4 text-center">Projects</h1><hr>
+            <p class="lead">Short descriptions about some my important projects</p>
+            <hr class="my-4">
 
             <p class="h3 text-center">ETS: ESP32 Tracking system</p>
             <p>
@@ -191,9 +194,55 @@ p {
                 Put the filaneme of the file contains the words that will be combined for the wordlist.
               <li>Info</li>         
                 For more info about this methods and more.
+            </ul>
             </p>
             <p>
               Source code and more details <a href="https://github.com/J4NN0/wordlist">here</a>
+            </p>
+            <hr class="my-4">
+
+            <p class="h3 text-center">Python Telegram BOT</p>
+            <p>
+              A python telegram BOT hosted on Heroku. The main function of this BOT is to work as a reminders but he can do a lot of other things. There are also a lot of easter eggs that I did to have fun my with my friends.
+            </p>
+            <p>
+              <ul>
+                <li>Developer</li>
+                  <ul>
+                    <li>/about:</li> to see info about developer
+                    </ul>
+                 <li>List</li>
+                  <ul>
+                    <li>/addtolist &ltitems>:</li> to add one or several items to your personal list (to do list, reminders or what you want)
+                    <li>/rmfromlist &ltitems>:</li>  to remove one or several itmes from your personal list
+                    <li>/show_list:</li> it shows items that you added to your personal list
+                    <li>/clear_list:</li> to delete all items from your pesonal list
+                  </ul>
+                <li>Message from strangers</li>
+                 <ul>
+                    <li>/topic:</li> to see topic that contains at least one message from a stranger
+                    <li>/msg [-user] &lttopic> &lttext>:</li>  to sent a message that everyone can read; -user is optional, if inserted your username will be showed with the message you sent
+                    <li>/showmsg &lttopic>:</li> to see message about a specific topic
+                    <li>/delmsg &lttopic>:</li> to delete a your message that you posted in that topic
+                    <li>/tagmsg:</li> to check if someone tag you in a topic or message (tag in telegram: @username)
+                    <li> /personalmsg:</li> to see all messages you sent
+                  </ul>
+                <li>Random value</li>
+                  <ul>
+                    <li>/random &ltnumber>:</li> it will return a random number in range(0, number)
+                  </ul>
+                <li>Alarm</li>
+                  <ul>
+                    <li>/timer &ltseconds>:</li> to set a timer and wait for your message
+                  </ul>
+                <li>Info about bot</li>
+                  <ul>
+                    <li>/help:</li> to have info about all commands
+                  </ul>
+              </ul>
+            </p>
+            <p>
+              The <a href="https://github.com/J4NN0/j4nn0-b0t">repo</a> containts a full guide of how to use and host online a python telegram BOT.
             </p>
         </div>
 	  </div>
