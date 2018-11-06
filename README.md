@@ -2,10 +2,18 @@
 
 This is my personal Website.  
 You can find:
-- About me 😎
-- My hobbies 🏎
 - My socials 👥
+- About me 😎
+  - Short description about my life
+  - My hobbies 🏎
+  - And more
 - Some short description of my important projects 💻
+- Curriculum Vitae
+- Contacts
+- Hacking \- White Hat guide
+  - WPS cracking
+  - WEP cracking
+  - More incoming...
 
 What are you waiting for? [Know me better](https://j4nn0.github.io.)!
 
@@ -15,13 +23,15 @@ What are you waiting for? [Know me better](https://j4nn0.github.io.)!
 - [X] Sidebar
 - [X] Footer with quote
 - [X] Home
-- [ ] Short description
+- [X] Short description
 - [ ] Personal photo
 - [X] About
+- [X] Projects
+- [X] CV
 - [X] Contacts
 - [ ] Form e-mail
-- [X] CV
-- [ ] Projects
+- [ ] White hat guides
+- [ ] Security
 
 # More
 
