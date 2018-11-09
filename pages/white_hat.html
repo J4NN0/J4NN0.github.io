@@ -124,10 +124,40 @@
                 <p>
                   From <a href="https://en.wikipedia.org/wiki/White_hat_(computer_security)">Wikipedia: </a>The term "white hat" in Internet slang refers to an ethical computer hacker, or a computer security expert, who specializes in penetration testing and in other testing methodologies that ensures the security of an organization's information systems. Contrasted with black hat, a malicious hacker, the name comes from Western films, where heroic and antagonistic cowboys might traditionally wear a white and a black hat respectively. While a white hat hacker hacks under good intentions with permission, and a black hat hacker has malicious intent, there is a third kind known as a grey hat hacker who hacks with good intentions without permission.
                 </p>
+                <p>
+                  All guides refer to <a href="https://www.kali.org/">Kali Linux</a>, an Advanced Penetration Testing Linux distribution used for Penetration Testing, Ethical Hacking and network security assessments.
+                </p>
+                <p>
+                  <a href="https://www.kali.org/downloads/">Download Kali Linux</a>
+                </p>
               </div>
 
               <div class="tab-pane fade" id="nav-wps" role="tabpanel" aria-labelledby="nav-wps-tab">
-                Work in progress...
+                <p>
+                  The used tool is:
+                  <ul>
+                    <li><a href="https://www.aircrack-ng.org/">Aircrack-ng</a></li>
+                    <li><a href="https://tools.kali.org/wireless-attacks/reaver">Reaver</a></li>
+                  </ul>
+                </p>
+                <p>
+                  First of all check the name of the wifi interface
+                  <p><code>airmon-ng</code></p>
+                  Usually in Kali Linux the name of the wifi interface is wlan0
+                  Put the wifi interface in monitoring mode using
+                  <p><code>airmon-ng start [wifi interface]</code></p>
+                  If necessary kill the mentioned processes which could disturb the scanning process
+                  <p><code>kill [pid]</code></p>
+                  Scan wireless networks and see if WPS is locked or not
+                  <p><code>whash -i [monitoring interface]</code></p>
+                  The RSSI indacates you the how much the wirless network is far from you. (-100 max value and it means very far)
+                  Choose a network in which the WPS is not locked and luch
+                  <p><code>reaver -b [bssid] -i [monitoring interface] -c [channel]</code></p>
+                  You can add other option such as <code>-S</code> or <code>-L</code> or <code>-w</code>. Check the <code>man reaver</code> for more info and details. 
+                </p>
+                <p>
+                  See this demonstration <a href="#">video</a>
+                </p>
               </div>
 
               <div class="tab-pane fade" id="nav-wep" role="tabpanel" aria-labelledby="nav-wep-tab">
