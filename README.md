@@ -39,7 +39,7 @@ What are you waiting for? [Know me better](https://j4nn0.github.io.)!
 
 # More
 
-I used [Bootstrap](https://getbootstrap.com/) and Font Awesome icons to simplfy the work.  
+I used [Bootstrap](https://getbootstrap.com/) and *Font Awesome icons* to simplfy the work.  
 
 # Usefull link
 
