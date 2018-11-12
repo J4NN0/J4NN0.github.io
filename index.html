@@ -14,11 +14,18 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Bootstrap JS - Latest compiled and minified JavaScript -->
     <script type="text/javascript" src="vendor/js/bootstrap.min.js"></script>
+    <!-- Goole API -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <!-- CSS files -->
     <link href="css/main_style.css" rel="stylesheet">
     <link href="css/sidebar.css" rel="stylesheet">
+    <link href="css/skill.css" rel="stylesheet">
     <!-- JS files -->
     <script type="text/javascript" src="js/utility.js"></script>
+    <script type="text/javascript" src="js/skill.js"></script>
+    <script type="text/javascript" src="js/quotes.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js"></script>
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Images -->
@@ -110,17 +117,32 @@
         <div class="jumbotron p-3 text-center">
             <h1 class="display-4">Hi there,</h1><hr>
             <p class="lead">
-              My name is Federico Gianno and I'm a Software Engineering student at PoliTO</p>
-            <p>
-              Undegraduate Computer Engineer, Msc student currently at second year of Computer Engineer at Politecnico di Torino. Passionate about Optimization Method and Algorithm, Machine Learning, Data Science, Clouds. Oriented toward challenges that require strong problem solving skills. Always improving soft skills and teamwork attitude.
-			     </p>
+              Software Engineering student at PoliTO
+            </p>
+            <div class="row">
+              <img src="img/personal_photo.jpg" alt="graduation day" id="personal_photo">
+              <div class="column">
+                <p>
+                  Undegraduate Computer Engineer, Msc student currently at second year of Computer Engineer at the Polytechnic University of Turin. Passionate about Optimization Method and Algorithms, Machine Learning, Data Science, Clouds. Oriented toward challenges that require strong problem solving skills.
+                </p>
+                <p>
+                  Always improving soft skills and teamwork attitude.
+                </p>
+                <h1 class="text-center" id="skill">
+                <a class="typewrite text-dark" data-period="2000" data-type='[ "C / C++ / C#", "Python", "Java", "Bash" ]'>
+                  <span class="wrap">My skills</span>
+                </a>
+                </h1>
+              </div>
+            </div>
+            <hr>
            <p>
              Below you can find the latest projects I'm working on
            </p>
         </div>
 
 	    <!--- Boxes --->
-	    <div class="row">
+	    <div class="row p-3">
 	    <!--- Box 1 --->
 	    <div class="col-sm-6">
 	        <div class="card">
@@ -170,11 +192,11 @@
 	                <img src="img/jdr4v3n.png" class="img-thumbnail" alt="J4NN0-B0T Logo"/>
 	                </div>
 	                <h4 class="card-title">J4NN0 B0T</h4>
-	                <p class="card-text">A python telegram BOT hosted on Heroku. The main function of this BOT is to work as a reminders but he can do a lot of other things. There are also a lot of easter eggs that I did to have fun my with my friends. The repo containts a full guide of how to use and host online a python telegram BOT.
+	                <p class="card-text">Python telegram BOT hosted on Heroku. The main function of this BOT is to work as a reminders but he can do a lot of other things. There are also a lot of easter eggs that I did to have fun my with my friends. The repo containts a full guide of how to use and host online a python telegram BOT.
 	                </p>
 	            </div>
 	        </div>
-	    </div>
+	      </div>
 	    </div>
     </div>
 	</div>

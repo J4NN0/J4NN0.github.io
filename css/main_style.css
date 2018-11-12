@@ -28,3 +28,24 @@
 .footer {
     padding: 16px 0;
 }
+
+#personal_photo {
+  float: left;
+  width: 280px;
+  height: 400px;
+  margin: 0 0 5px 15px;
+}
+
+.column {
+  float: right;
+  width: 70%;
+  padding: 10px;
+}
+
+#skill {
+  float: center;
+  margin: 90px 0 0 0;
+  font-family: 'Courier New';
+  font-size: 80px;
+  font-style: italic;
+}
