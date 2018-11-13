@@ -1,53 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <style>
-  @import url(https://fonts.googleapis.com/css?family=Montserrat);
-
-  svg {
-    float: center;
-    display: block;
-    font: 10.5em 'Montserrat';
-    width: 700px;
-    height: 300px;
-    margin: -70px 0 0 190px;
+  body {
+    background-color:#000;
+    margin: 0;
+    overflow: hidden;
+    padding:0;
   }
 
-  .text-copy {
-    fill: none;
-    stroke: white;
-    stroke-dasharray: 6% 29%;
-    stroke-width: 5px;
-    stroke-dashoffset: 0%;
-    animation: stroke-offset 5.5s infinite linear;
+  .screen {
+    animation:colorPulse 5s infinite ease-in-out;
+    background-image:radial-gradient(#444, #111);
+    box-shadow:0 0 5vmin 1vmin #000 inset;
+    box-sizing:border-box;
+    font-family:'Fira Mono', monospace;
+    font-size:20px;
+    height:100%;
+    width:100%;
+    overflow:hidden;
+    padding:10vmin;
   }
 
-  .text-copy:nth-child(1){
-    stroke: #4D163D;
-    animation-delay: -1;
+  .screen:before {
+    animation:wave 10s infinite ease-in-out;
+    content:"";
+    height:20vh;
+    left:0;
+    opacity:.5;
+    position:absolute;
+    right:0;
+    z-index:1;
   }
 
-  .text-copy:nth-child(2){
-    stroke: #840037;
-    animation-delay: -2s;
+  .screen:after {
+    background-image:linear-gradient(transparent, transparent 3px, #222);
+    background-size:4px 4px;
+    bottom:0;
+    content:"";
+    left:0;
+    pointer-events:none;
+    position:absolute;
+    right:0;
+    top:0;
+    z-index:2;
   }
 
-  .text-copy:nth-child(3){
-    stroke: #BD0034;
-    animation-delay: -3s;
+  p:last-child:after {
+    animation:blink 1s infinite;
+    content:"_";
   }
 
-  .text-copy:nth-child(4){
-    stroke: #BD0034;
-    animation-delay: -4s;
+  @keyframes colorPulse {
+    0%, 100% {
+      color:#0c0;
+    }
+    48%, 52% {
+      color:#090;
+    }
+    50% {
+      color:#060;
+    }
   }
 
-  .text-copy:nth-child(5){
-    stroke: #FDB731;
-    animation-delay: -5s;
+  @keyframes wave {
+    0% {
+      box-shadow:0 -10vh 20vh #0c0;
+      top:-100vh;
+    }
+    48%, 52% {
+      box-shadow:0 -10vh 20vh #090;
+    }
+    50% {
+      box-shadow:0 -10vh 20vh #060;
+    }
+    100% {
+      box-shadow:0 -10vh 20vh #0c0;
+      top:200vh;
+    }
   }
 
-  @keyframes stroke-offset{
-    100% {stroke-dashoffset: -35%;}
+  @keyframes blink {
+    50% {
+      opacity:0;
+    }
   }
 </style>
 <head>
@@ -57,6 +92,8 @@
     <meta name="author" content="Federico Gianno">
     
     <title>J4NN0</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono">
     
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" type="text/css" href="../../vendor/css/bootstrap.min.css">
@@ -155,30 +192,18 @@
 
     <!--- Container --->
     <div class="container"><br>
-        <div class="jumbotron p-3">
-            <h1 class="display-4 text-center">34573R 566</h1><hr>
-            <p class="lead text-center">My nickname is</p>
-            <div class="container text">
-              <svg viewBox="0 0 960 300">
-                <symbol id="s-text">
-                <text text-anchor="middle" x="50%" y="80%">J4NN0</text>
-                </symbol>
-                <g class = "g-ants">
-                  <use xlink:href="#s-text" class="text-copy"></use>
-                  <use xlink:href="#s-text" class="text-copy"></use>
-                  <use xlink:href="#s-text" class="text-copy"></use>
-                  <use xlink:href="#s-text" class="text-copy"></use>
-                  <use xlink:href="#s-text" class="text-copy"></use>
-                </g>
-              </svg>
-            </div>
-        </div>
+      <div class="screen">
+        <p>
+          Control can sometimes be an illusion. But sometimes you need illusions to gain control. Fantasy is an easy way to give meaning to world. To cloak our harsh reality with escapist comfort. After all, isn't that why we surround ourselves with so many screens? So we can avoid seeing? So we can avoid each other? So we can avoid truth.
+        </p>
+        <p style="text-align:right">Elliot Alderson - Mr. Robot, eps2.5_h4ndshake.sme</p>
+      </div>
     </div>
   </div>
 
   <!--- Footer --->
   <footer class="text-center p-3 footer bg-dark">
-      <p class="text-white"><q>A <a class="text-white" href="../about.html">bug</a> is never just a mistake. It represents something bugger. An error of thinking, that makes you who you really are</q></p>
+      <p class="text-white"><q>A <a class="text-white" href="#">bug</a> is never just a mistake. It represents something bugger. An error of thinking, that makes you who you really are</q></p>
   </footer>
 
 </body>
