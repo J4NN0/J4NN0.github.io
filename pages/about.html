@@ -8,7 +8,7 @@
     
     <title>J4NN0</title>
     
-<!-- Bootstrap CSS -->
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" type="text/css" href="../vendor/css/bootstrap.min.css">
     <!-- jQuery 1.x snippet: -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -96,12 +96,20 @@
             <i class="fa fa-envelope-o"></i>
             <span>Contacts</span></a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="white_hat.html">
-            <i class="fa fa-user-secret"></i>
-            <span>Hacking</span></a>
+        <li data-toggle="collapse" data-target="#products" class="nav-item collapsed">
+          <a class="nav-link" href="#"><i class="fa fa-th-list"></i> More<span class="arrow"></span></a>
         </li>
-    </ul> 
+        <ul class="sub-menu collapse nav-item" id="products">
+            <li><a class="nav-link" href="white_hat.html">
+                <i class="fa fa-user-secret"></i>
+                <span>Hacking</span></a>
+            </li>
+            <li><a class="nav-link" href="#">
+                <i class="fa fa-spinner"></i>
+                <span>Machine learning</span></a>
+            </li>
+        </ul>
+	</ul>
 
     <!--- Container --->
     <div class="container"><br>
