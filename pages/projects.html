@@ -123,56 +123,19 @@
               The purpose of this project is to sniff probe request packets sent by smartphones that are looking for a Wi-Fi connection. From each sniffed packet some informations will be extracted and elaborated in order to do several analysis.
             </p>
             <p>
-              The firmware of the ESP is written with the purpose to sniff probe request packets sent by smartphones that are looking for a Wi-Fi connection.
-              From each sniffed packet these informations will be extracted:
-              <ul>
-                <li>MAC of the smartphone that has sent the request</li>
-                <li>SSID of the wifi to which the request is sent</li>
-                <li>The timestamp on which the request is sent</li>
-                <li>RSSI</li>
-                <li>HT Capabilities Info</li>
-              </ul>
-              After each minute these informations are sent to a server and processed. 
-              Then is possible to see the processed information, like position, time frequency and etc., through a GUI.
+              The firmware of the ESP is written with the purpose to sniff probe request packets sent by smartphones that are looking for a Wi-Fi connection. From each sniffed packet some informations will be extracted. After each minute these informations are sent to a server that process and store thme in a MySQL database. Then is possible to see the processed information, like position, time frequency and etc., through a GUI.
             </p>
             <p>
-              A class is used to get information from the database of the ETS to be visualized. Here it is described how it is composed every single tuple of the database
-              <dl class="row">
-                <dt class="col-sm-3">Hash</dt>
-                <dd class="col-sm-9">Unique identifier of the packet</dd>
-
-                <dt class="col-sm-3">Mac</dt>
-                <dd class="col-sm-9">MAC address of the device</dd>
-
-                <dt class="col-sm-3">TID</dt>
-                <dd class="col-sm-9">Timestamp of the found device</dd>
-
-                <dt class="col-sm-3">ROMMID</dt>
-                <dd class="col-sm-9">Room identifier of the found device</dd>
-
-                <dt class="col-sm-3">X</dt>
-                <dd class="col-sm-9">X position of the found device</dd>
-
-                <dt class="col-sm-3">Y</dt>
-                <dd class="col-sm-9">Y position of the found device</dd>
-
-                <dt class="col-sm-3">SN</dt>
-                <dd class="col-sm-9">Sequence number of the packet sent by the device</dd>
-
-                <dt class="col-sm-3">HTCI</dt>
-                <dd class="col-sm-9">HT Capabilities Info field of the packet sent by the device</dd>
-              </dl>
-            </p>
-            <p>
-              In order to improve security some devices uses random generated MAC address to send probe request packets.
-              A random generated MAC address can be recognized because the 2nd bit of the 1st byte is set to one.
-              This class is able to exploit a leak in this mechanism and group all tuples with different MAC addresses belonging to the same device. So a device that is using random generated MAC addresses, sends probe request packets with an increasing Sequence Number and with the same HT Capabilities Info field (unique for the type of device).
+              The system is also able to recognize random generated MAC address: in order to improve security some devices uses random generated MAC address to send probe request packets. Briefly a random generated MAC address can be recognized because the 2nd bit of the 1st byte is set to one. A class is able to exploit a leak in this mechanism and group all tuples with different MAC addresses belonging to the same device.
             </p>
             <hr class="my-4">
 
             <p class="h3 text-center">Twitch report</p>
             <p>
-              It's a full report for <a href="https://www.twitch.tv/" target="_blank">Twitch</a> application, a streaming service, analyzing the various protocols and decrypting the data.
+              It's a full report of <a href="https://www.twitch.tv/" target="_blank">Twitch</a> application, a streaming service, analyzing the various protocols and decrypting the data.
+            </p>
+            <p>
+              The report was written for the 'Laboratorio di Internet e Comunicazione' course, held by <a href="https://www.telematica.polito.it/public/faculty/marco-mellia">Marco Mellia</a> professor, at Polytechnic University of Turin.
             </p>
             <p>
               <a href="../doc/twitch_report.pdf" type="pdf">See the full report</a>
@@ -181,27 +144,7 @@
 
             <p class="h3 text-center">Wordlist generator</p>
             <p>
-              Allow you to make customized wordlist through a variety of methods. You can choose your favourite method and build your wordlist!
-            </p>
-            <p>
-            The wordlist will containt strings with length from 1 character to the max size (decided by you).
-            You can choose how each string have to be composed through the following methods:
-            <ul>
-              <li>Wordlist with whole alphabet</li>
-                You have to choose only the max size of the strings that will be generated. The strings will be composed by the whole alphabet (lower case, upper case or both).
-              <li>Wordlist with only numbers (0-9)</li>
-                You have to choose only the max size of the strings that will be generated. The strings will be composed by only numbers.
-              <li>Customized wordlist</li>
-                You have to choose which characters will compose your final string: just put manually the characters that you prefer until you are satisfied. Then choose the max size of the strings that will be generated.
-              <li>Wordlist with strings, characters and numbers</li>
-                You can choose if you want insert in the wordlist strings, characters or numbers. Then choose the max size of the strings that will be generated.
-              <li>Guided wordlist</li>
-                It's a guided version to make your customized wordlist. You can chose, step by step, if you want insert some or all characters of the alphabet, some number and/or special characters.
-              <li>Wordlist from data file</li>       
-                Put the filaneme of the file contains the words that will be combined for the wordlist.
-              <li>Info</li>         
-                For more info about this methods and more.
-            </ul>
+              Allow you to make customized wordlist through a variety of methods. You can choose your favourite method and build your wordlist.
             </p>
             <p>
               Source code and more details <a href="https://github.com/J4NN0/wordlist" target="_blank">here</a>
@@ -209,47 +152,31 @@
             <hr class="my-4">
 
             <p class="h3 text-center">Python Telegram BOT</p>
+            <h5>WeStudy</h5>
             <p>
-              A python telegram BOT hosted on Heroku. The main function of this BOT is to work as a reminders but he can do a lot of other things. There are also a lot of easter eggs that I did to have fun my with my friends.
+              WeStudy has been developed in 24h during the "Hello Bot!" hackathon organized by HKN PoliTO in Turin the 11-12th Novemeber 2017. Thanks to this bot, me and my team, got the first place in the competition.
             </p>
             <p>
-              <ul>
-                <li>Developer</li>
-                  <ul>
-                    <li>/about:</li> to see info about developer
-                    </ul>
-                 <li>List</li>
-                  <ul>
-                    <li>/addtolist &ltitems>:</li> to add one or several items to your personal list (to do list, reminders or what you want)
-                    <li>/rmfromlist &ltitems>:</li>  to remove one or several itmes from your personal list
-                    <li>/show_list:</li> it shows items that you added to your personal list
-                    <li>/clear_list:</li> to delete all items from your pesonal list
-                  </ul>
-                <li>Message from strangers</li>
-                 <ul>
-                    <li>/topic:</li> to see topic that contains at least one message from a stranger
-                    <li>/msg [-user] &lttopic> &lttext>:</li>  to sent a message that everyone can read; -user is optional, if inserted your username will be showed with the message you sent
-                    <li>/showmsg &lttopic>:</li> to see message about a specific topic
-                    <li>/delmsg &lttopic>:</li> to delete a your message that you posted in that topic
-                    <li>/tagmsg:</li> to check if someone tag you in a topic or message (tag in telegram: @username)
-                    <li> /personalmsg:</li> to see all messages you sent
-                  </ul>
-                <li>Random value</li>
-                  <ul>
-                    <li>/random &ltnumber>:</li> it will return a random number in range(0, number)
-                  </ul>
-                <li>Alarm</li>
-                  <ul>
-                    <li>/timer &ltseconds>:</li> to set a timer and wait for your message
-                  </ul>
-                <li>Info about bot</li>
-                  <ul>
-                    <li>/help:</li> to have info about all commands
-                  </ul>
-              </ul>
+              The <a href="https://github.com/westudybot/bot" target="_blank">code</a> is available on GitHub.
+            </p>
+            <h5>J4NN0 B0T</h5>
+            <p>
+              A python telegram BOT hosted on <a href="https://www.heroku.com/">Heroku</a>. The main function of this BOT is to work as a reminders but he can do a lot of other things. There are also a lot of easter eggs that I did to have fun my with my friends.
             </p>
             <p>
-              The <a href="https://github.com/J4NN0/j4nn0-b0t" target="_blank">repo</a> containts a full guide of how to use and host online a python telegram BOT.
+              The <a href="https://github.com/J4NN0/j4nn0-b0t" target="_blank">repo</a> containts a full guide of how to use and how host online a python telegram BOT.
+            </p>
+            <hr class="my-4">
+
+            <p class="h3 text-center">Timetabling problem</p>
+            <p>
+              The aim of the problem is to assign time-slots and resources to the meetings so as to satisfy the constraints as much as possible. The solution contains different implementation of metaheuristic algortihm like Graph Coloring, Tabù Search and Simulated Annealing.
+            </p>
+            <p>
+              The code was developed for 'Optimization Methods and Algorithms' course at Polytechnic University of Turin. 
+            </p>
+            <p>
+              Source code and more specifics are available on <a href="https://github.com/ExaminationTimetabling/timetabling">GitHub</a>.
             </p>
         </div>
 	  </div>
