@@ -103,12 +103,43 @@
         <div class="jumbotron p-3 text-center">
             <h1 class="display-4">Contacts</h1><hr>
             <p class="lead"></p>
-            <p>
-              Contact me on my social media sending me a message on <a href="https://www.facebook.com/giannofederico" target="_blank">Facebook</a> or <a href="https://twitter.com/giannofederico" target="_blank">Twitter.</a>
-            </p>
-            <p>
-              Or just sent me an e-mail on <a href="mailto:giannofederico@gmail.com">Gmail</a> or on my <a href="mailto:s255548@studenti.polito.it">PoliTO</a> account, my institutional e-mail.
-            </p>
+            <div class="row">
+              <div class="col-md-6">
+                <form action="https://formspree.io/giannofederico@gmail.com" method="POST" style="width: 95%; height: 95%">
+                  <div class="row">
+                      <div class="col-md-12">
+                          <label for="email" id="orange">Your email</label>
+                          <input type="email" name="email" placeholder="Your email" class="form-control" id="email">
+                      </div>
+                  </div>
+                  <br>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <label for="text" id="orange">Text</label>
+                          <textarea name="message" placeholder="Text Message" class="form-control" rows="5" id="text"></textarea>
+                      </div>
+                  </div>
+                  <br>
+                  <div class="row">
+                      <div class="offset-md-3 col-md-6">
+                          <button type="submit" class="btn btn-primary btn-md">Send</button>
+                      </div>
+                  </div>
+                </form>
+              </div>
+              <div class="col-md-6">
+                <div class="container-fluid" style="margin-top: 80px; margin-left: 30px">
+                  <div class="row">
+                    <p>
+                      Email: <a href="mailto:giannofederico@gmail.com">giannofederico@gmail.com</a>
+                    </p>
+                    <p>
+                      You can also find me on <a href="https://www.facebook.com/giannofederico" target="_blank">Facebook</a> or <a href="https://twitter.com/giannofederico" target="_blank">Twitter.</a>
+                    </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
     </div>
   </div>
