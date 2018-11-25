@@ -10,41 +10,21 @@ You can find:
 - Some short description of my important projects 💻
 - Curriculum Vitae 📃
 - Contacts 📧
-- More
-  - Hacking \- White Hat guide 🔐
-    - WPS cracking
-    - WEP cracking
-    - More soon..
-  - Machine Learning
-    - PCA
-    - Classification
-    - Kernel
 
 What are you waiting for? [Know me better](https://j4nn0.github.io.)!
 
 # To do
 
-- [X] Social
+- [X] Header with social
 - [X] Sidebar
 - [X] Footer with quote
 - [X] Home
-- [X] Short description
-- [X] Personal photo
+  - [X] Short description and Personal photo
 - [X] About
 - [X] Projects
 - [X] CV
 - [X] Contacts
-- [ ] Form e-mail
-- [ ] White hat guides
-    - [X] WPS
-    - [ ] WEP
-    - [ ] WPA2
-    - [ ] MITM
-    - [ ] Security
-- [ ] Machine Learning
-    - [ ] PCA
-    - [ ] Classification
-    - [ ] Kernel
+- [X] Form e-mail
 
 # More
 
