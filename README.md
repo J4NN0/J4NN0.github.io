@@ -34,3 +34,4 @@ I used [Bootstrap](https://getbootstrap.com/) and *Font Awesome icons* to simplf
 
 - [Bootstrap Get Started](https://www.w3schools.com/bootstrap/default.asp)
 - [Font Awesome Introduction](https://www.w3schools.com/icons/fontawesome_icons_intro.asp)
+- [Free icon](https://www.freepik.com/)
