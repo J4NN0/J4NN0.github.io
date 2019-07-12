@@ -19,7 +19,7 @@ What are you waiting for? [Know me better](https://j4nn0.github.io.)!
 - [X] Sidebar
 - [X] Footer with quote
 - [X] Home
-  - [X] Short description and Personal photo
+- [X] Short description and Personal photo
 - [X] About
 - [X] Projects
 - [X] CV
@@ -28,7 +28,7 @@ What are you waiting for? [Know me better](https://j4nn0.github.io.)!
 
 # More
 
-I used [Bootstrap](https://getbootstrap.com/) and *Font Awesome icons* to simplfy the work.  
+I used [Bootstrap](https://getbootstrap.com/) and *Font Awesome icons* to simplify the work.  
 
 # Usefull link
 
