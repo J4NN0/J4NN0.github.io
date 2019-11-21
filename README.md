@@ -8,6 +8,7 @@ You can find:
   - My hobbies 🏎
   - And more
 - Some short description of my important projects 💻
+- Education 🎓
 - Curriculum Vitae 📃
 - Contacts 📧
 
@@ -26,11 +27,11 @@ What are you waiting for? [Know me better](https://j4nn0.github.io.)!
 - [X] Contacts
 - [X] Form e-mail
 
-# More
+# Notes
 
-I used [Bootstrap](https://getbootstrap.com/) and *Font Awesome icons* to simplify the work.  
+I used [Bootstrap](https://getbootstrap.com/) to simplify the work.  
 
-# Usefull link
+### Usefull link
 
 - [Bootstrap Get Started](https://www.w3schools.com/bootstrap/default.asp)
 - [Font Awesome Introduction](https://www.w3schools.com/icons/fontawesome_icons_intro.asp)
