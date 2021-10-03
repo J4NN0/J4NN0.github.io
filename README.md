@@ -2,6 +2,7 @@
 
 This is my personal Website.  
 You can find:
+
 - My socials 👥
 - About me 😎
   - Short description about my life 🏊
