@@ -132,59 +132,37 @@
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="projects">
         <div class="my-auto">
           <h2 class="mb-5">Projects</h2>
-            <p class="lead">Short descriptions about some my important projects. Check out my <a href="https://github.com/J4NN0" target="_blank">GitHub</a> to see all my projects <a class="text-white" href="pages/games/snake.html">or Play snake Here.</a></p>
+            <p class="lead">Short descriptions about some my major personal projects. Check out my <a href="https://github.com/J4NN0" target="_blank">GitHub</a> to see all of them <a class="text-white" href="pages/games/snake.html">or Play snake Here.</a></p>
             <hr class="my-4">
 
             <p class="h3 text-center">ETS: ESP32 Tracking system</p>
             <p>
-              The purpose of this project is to sniff probe request packets sent by smartphones that are looking for a Wi-Fi connection. From each sniffed packet some information will be extracted and elaborated in order to do several analysis.
+              A system made up of ESP32 devices and from a server that acts as a collector of the information collected and allows its processing and display.
             </p>
             <p>
-              The firmware of the ESP is written with the purpose to sniff probe request packets sent by smartphones that are looking for a Wi-Fi connection. From each sniffed packet some information will be extracted. After each minute these information are sent to a server that process and store them in a MySQL database. Then is possible to see the processed information, like real time location of the smartphones, smartphone frequency and etc., through a GUI.
+              The firmware of the ESP is written with the purpose to sniff probe request packets sent by smartphones that are looking for a Wi-Fi connection. From each sniffed packet some information are extracted and, after each minute, they are sent to a server that process and store them in a SQL database. 
             </p>
             <p>
-              The system is also able to recognize random generated MAC address: in order to improve security some devices uses random generated MAC address to send probe request packets. Briefly a random generated MAC address can be recognized because the 2nd bit of the 1st byte is set to one. A class is able to exploit a leak in this mechanism and group all tuples with different MAC addresses belonging to the same device.
+              TIt is possible to see the processed information, like the real time location of the smartphones, smartphone frequency and etc., through a GUI.
             </p>
             <p>
-              Source code available on my <a href="https://github.com/ETS-PoliTO" target="_blank">GitHub</a>. A demonstration <a href="https://youtu.be/NMywky9Ts_w" target="_blank">video</a> on youtube shows how ESP32 works.
+              Source code (ESP32 firmware, server and GUI) available on my <a href="https://github.com/ETS-PoliTO" target="_blank">GitHub</a>. A demo <a href="https://youtu.be/NMywky9Ts_w" target="_blank">video</a> on youtube shows how ESP32 works.
               Check out also this short <a href="doc/ets_presentation.pdf" type="pdf">presentation</a>.
             </p>
             <hr class="my-4">
 
             <p class="h3 text-center">Study and design data models for NFV and SDN architectures</p>
             <p>
-              Research collaborator at Politecnico di Torino in collaboration with <a href="http://netgroup.polito.it" target="_blank">PoliTO Netgroup</a> (Computer Networks Group at Politecnico di Torino) in order to study and design data models for NFV and SDN architectures. Worked side by side with two PhD students and the professor of "Distributed Programming II" course at PoliTO.
+              State-of-the-art research in order to study and design data models for Network Function Virtualization (NFV) and Software Defined Networking (SDN) architectures - associated with <a href="http://netgroup.polito.it" target="_blank">PoliTO Netgroup</a> (Computer Networks Group at Politecnico di Torino).
             </p>
             <p>
               Proposed a new data format (described by means of an XML schema) for the representation of all the most relevant information in the NFV (Network Function Virtualization) and SDN (Software Defined Networking). Also a RESTful web service has been implemented in order to store and retrieve the NFV/SDN information.
             </p>
-            <p>PoliTO Netgroup official <a href="https://github.com/netgroup-polito" target="_blank">GitHub repo</a></p>
-            <hr class="my-4">
-           
-            <p class="h3 text-center">Machine Learning - PCA, Naive Bayes Classifier and SVM</p>
             <p>
-             <b>1. </b>Python code in which it is showed what happens if different principal components (PC) are chosen as basis for images representation and classification. Then, the Naive Bayes Classifier has been chosen and applied in order to classify the image.
-            </p>
-            <p>
-             <b>2. </b>Support Vector Machines (SVMs) are supervised learning models with associated learning algorithms that analyze data used for classification and regression analysis. Given a set of training examples, each marked as belonging to one or the other of two categories, an SVM training algorithm builds a model that assigns new examples to one category or the other, making it a non-probabilistic binary linear classifier.
-            </p>
-            <p>
-              Checkout the <a href="https://github.com/J4NN0/machine-learning-pca-svm" target="_blank">GitHub repo</a> to have a more in depth overview. Also reports are available: <a href="doc/pca_report.pdf" type="pdf">PCA & Naive Bayes Classifier</a> and <a href="doc/svm_report.pdf" type="pdf">SVM</a>.
+              Source code available on PoliTO Netgroup official <a href="https://github.com/netgroup-polito/nfv-data-model" target="_blank">GitHub repo</a>.
             </p>
             <hr class="my-4">
 
-            <p class="h3 text-center">Deep Learning - Convolutional Neural Network</p>
-            <p>
-              An implementation of a Convolutional Neural Network (CNN) from scratch on a big image dataset. The used deep layer framework has been pytorch.
-            </p>
-            <p>
-              The code implements a basic NN and CNN within data loading, training and evaluation (testing) phase. The training and testing are on CIFAR 100 dataset.
-            </p>
-            <p>
-              See <a href="https://github.com/J4NN0/deep-learning-cnn" target="_blank"> code</a> and related <a href="doc/cnn_report.pdf" type="pdf">report</a>.
-            </p>
-            <hr class="my-4">
-            
             <p class="h3 text-center">APPetit</p>
             <p>
               Android food delivery APP for "Mobile Application Development" course at Politecnico di Torino.
@@ -197,16 +175,40 @@
               <li>Riders app (deliveryman): allows the rider to see the order and access both the restaurant and the delivery address.</li>
             </ul>
             <p>
-              For more info check the <a href="https://github.com/androidmaycry/APPetit" target="_blank"> GitHub repo</a>.
+              Source code available on <a href="https://github.com/androidmaycry/APPetit" target="_blank"> GitHub</a>.
             </p>
             <hr class="my-4">
             
             <p class="h3 text-center">Wordlist generator</p>
             <p>
-              Make your customized wordlist for penetration testing practice (brute force attack, dictionary attack, etc.). A variety of methods are available: choose your favorite one and make your own wordlist.
+              Make your customized wordlist for penetration testing practice (brute force attack, dictionary attack, etc.). Wordlists can be generated through a variety of methods, pick one and enjoy your wordlist.
             </p>
             <p>
-              Source code and more details <a href="https://github.com/J4NN0/wordlist-generator" target="_blank">here</a>. 
+              Source code available on <a href="https://github.com/J4NN0/wordlist-generator" target="_blank">GitHub</a>. 
+            </p>
+            <hr class="my-4">
+           
+            <p class="h3 text-center">Machine Learning - PCA, Naive Bayes Classifier and SVM</p>
+            <p>
+             <b>1. </b>It is showed what happens if different principal components (PC) are chosen as basis for images representation and classification. Then, the Naive Bayes Classifier has been chosen and applied in order to classify the image.
+            </p>
+            <p>
+             <b>2. </b>Given a set of training examples, each marked as belonging to one or the other of two categories, an SVM training algorithm builds a model that assigns new examples to one category or the other, making it a non-probabilistic binary linear classifier.
+            </p>
+            <p>
+              Source code available on <a href="https://github.com/J4NN0/machine-learning-pca-svm" target="_blank">GitHub</a>. Also related reports are available: <a href="doc/pca_report.pdf" type="pdf">PCA & Naive Bayes Classifier</a> and <a href="doc/svm_report.pdf" type="pdf">SVM</a>.
+            </p>
+            <hr class="my-4">
+
+            <p class="h3 text-center">Deep Learning - Convolutional Neural Network</p>
+            <p>
+              An implementation of a Convolutional Neural Network (CNN) from scratch on a big image dataset. The used deep layer framework has been pytorch.
+            </p>
+            <p>
+              The code implements a basic NN and CNN within data loading, training and evaluation (testing) phase. The training and testing are on CIFAR 100 dataset.
+            </p>
+            <p>
+              Source code available on <a href="https://github.com/J4NN0/deep-learning-cnn" target="_blank"> GitHub</a> and related <a href="doc/cnn_report.pdf" type="pdf">report</a>.
             </p>
             <hr class="my-4">
 
@@ -249,6 +251,18 @@
               Source code and more specifics are available on my <a href="https://github.com/ExaminationTimetabling/timetabling" target="_blank">GitHub</a>.
             </p>
             <hr class="my-4">
+
+            <p class="h3 text-center">Happy Wedding</p>
+            <p>
+              Prepare your wedding at best by sitting your guests in the best possible way (based on their relationships and/or interactions).
+            </p>
+            <p>
+              The wedding has a set of guests, a number of tables, and, for each table, the maximum number of seats. Each guest has an interaction with the other guests (a unit value from a minimum of -5 to a maximum of +5). The algorithm, through a recursive function, will calculate the average mood of the room and will give you each person's seating.
+            </p>
+            <p>
+              Source code available on <a href="https://github.com/J4NN0/happy_wedding" target="_blank">GitHub</a>.
+            </p>
+            <hr class="my-4">
             
             <p class="h3 text-center">Twitch report</p>
             <p>
@@ -268,7 +282,7 @@
               WeStudy has been developed in 24h during the "Hello Bot!" hackathon organized by HKN PoliTO in Turin the 11-12th November 2017. Thanks to this bot, me and my team, got the first place in the competition.
             </p>
             <p>
-              The <a href="https://github.com/westudybot/bot" target="_blank">code</a> is available on GitHub.
+              Source code available on <a href="https://github.com/westudybot/bot" target="_blank">GitHub</a>.
             </p>
             <p class="lead">- Hungry Student App</p>
             <p>
@@ -278,7 +292,7 @@
               Thanks to this assistant we got the first place.
             </p>
             <p>
-              See the <a href="https://github.com/aiy-voice-assistant/hungry-student-app" target="_blank"> code</a>.
+              Source code available on <a href="https://github.com/aiy-voice-assistant/hungry-student-app" target="_blank"> GitHub</a>.
             </p>
         </div>
       </section>
@@ -341,7 +355,7 @@
             <p class="lead">My Resumé</p>
             <p>
               <i class=""></i>
-              <a role="button" class="button fa fa-file-pdf-o" href="doc/Federico_Gianno_CV.pdf" type="pdf"> CV</a>
+              <a role="button" class="button fa fa-file-pdf-o" href="doc/Federico_Gianno_CV.pdf" type="pdf"> Resumé</a>
             </p>
             <p><a class="text-white" href="pages/eastereggs/what_a_meme.html">Cmon, pls.</a></p>
         </div>
