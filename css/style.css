@@ -46,6 +46,11 @@ p {
   margin-bottom: 30px;
 }
 
+.social {
+  text-align: center; 
+  font-size: 30px;
+}
+
 /* Links */
 a {
   color: #998fe5; 
