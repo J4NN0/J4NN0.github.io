@@ -1,3 +1,3 @@
 # J4NN0.github.io
 
-Just my personal Website.
+A little bit about me, much more about my interests and projects.
