@@ -43,13 +43,13 @@
         A system made up of ESP32 devices and from a server that acts as a collector of the information collected and allows its processing and display.
       </p>
       <p>
-        The firmware of the ESP is written with the purpose to sniff probe request packets sent by smartphones that are looking for a Wi-Fi connection. From each sniffed packet some information are extracted and, after each minute, they are sent to a server that process and store them in a SQL database. 
+        The ESP32 firmware is written with the purpose to sniff probe request packets sent by smartphones seeking a Wi-Fi connection. Some information is extracted from each sniffed packet and sent every minute to a server that processes and stores it in an SQL database.
       </p>
       <p>
-        TIt is possible to see the processed information, like the real time location of the smartphones, smartphone frequency and etc., through a GUI.
+        It is possible to view the processed information, such as the real-time location of the smartphones, the frequency of the smartphones, etc., through a GUI.
       </p>
       <p>
-        This <a href="https://youtu.be/NMywky9Ts_w" target="_blank">demo</a> shows how ESP32 works.
+        This <a href="https://youtu.be/NMywky9Ts_w" target="_blank">demo</a> shows how the system works.
         Check out also this short <a href="../doc/ets_presentation.pdf" type="pdf">presentation</a>.
       </p>
       <hr class="project-sep">
@@ -71,15 +71,22 @@
 
       <h1><a href="https://github.com/J4NN0/league-of-legends-fight-tactics" target="_blank">League of Legends Fight Tactics</a></h1>
       <p>
-        League of Legends fight tool made in GoLang which allows to download champions data, make them fight and get the best combination of spells based on the time (in seconds) taken to kill the enemy champion.
+        League of Legends fight tool made in GoLang that allows you to download champions data, make them fight and get the best combination of spells based on the time (in seconds) it takes to kill the enemy champion.
       </p>
       <p>
-        Each champion data can be downloaded/updated from the official Data Dragon League of Legends APIs. Once the data has been downloaded (custom data can be also provided as far as they follow the same .yml struct), it is possible to make two champions fight and get the best round of spells for which the first champion can kill the second as quickly as possible. The fight takes place only from a data point of view, i.e. no graphic combat is displayed on the screen.
+        Each champion's data can be downloaded/updated from the official <a href="https://developer.riotgames.com/docs/lol#data-dragon_champions" target="_blank">Data Dragon League of Legends APIs</a>. Once the data has been downloaded (custom data can also be provided as long as it follows the same .yml struct), it is possible to have two champions fight and get the best round of spells for which the first champion can kill the second one as quickly as possible. The battle takes place only from a data point of view i.e., no graphic battle is displayed on the screen.
       </p>
       <p>
-        The best spells output is saved in the corresponding .loltactics file where you can find the order of the spells, their name/id, damage and how much life the enemy has left in each spell round (until he reaches zero hp).
+        The best spells output is saved in the corresponding .loltactics file, where you can find the order of the spells, their name/id, damage and how much life the enemy has left in each spell round (until he reaches zero hp).
       </p>
       <hr class="project-sep">
+
+      <h1><a href="https://github.com/J4NN0/go-cache" target="_blank">go-cache</a></h1>
+      <p>
+        A thread safe in-memory key-value cache suitable for single instance microservices. Any object can be stored with a given duration or no expiration time at all. Since the cache is thread safe, it can be safely used by multiple goroutines.
+      </p>
+      <hr class="project-sep">
+
 
       <h1><a href="https://github.com/androidmaycry/APPetit" target="_blank">APPetit</a></h1>
       <p>
