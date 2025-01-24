@@ -48,13 +48,7 @@
     <section class="container">
       <h1><a href="https://github.com/ETS-PoliTO" target="_blank">ESP32 Tracking System (ETS)</a></h1>
       <p>
-        A <a href="../doc/ets_presentation.pdf" type="pdf">system made up of ESP32</a> devices and from a server that acts as a collector of the information collected and allows its processing and display.
-      </p>
-      <p>
-        The ESP32 firmware is written with the purpose to sniff probe request packets sent by smartphones seeking a Wi-Fi connection. Some information is extracted from each sniffed packet and sent every minute to a server that processes and stores it in an SQL database.
-      </p>
-      <p>
-        It is possible to view the processed information, such as the real-time location of the smartphones, the frequency of the smartphones, etc., through a GUI.
+        A <a href="../doc/ets_presentation.pdf" type="pdf"> distributed system</a> made up of ESP32 devices that sniffs probe request packets sent by smartphones searching for Wi-Fi and send to a server that generates device positions. The real-time smartphones location, the frequency with which each smartphone appears, and many other informations are accessible through a UI.
       </p>
       <p>
         This <a href="https://youtu.be/NMywky9Ts_w" target="_blank">demo</a> shows how the ESP32 firmware works.
