@@ -113,7 +113,6 @@ li {
 }
 
 /* Media Query */
-
 @media screen and (min-width: 769px) {
   .container {
     max-width: 38rem;
