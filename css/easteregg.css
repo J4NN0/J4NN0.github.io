@@ -10,23 +10,23 @@
     margin-bottom: 30px;
 }
 
+.hero-container {
+    position: relative;
+    padding: 200px 0;
+    text-align: center;
+}
+
 /* Glith effect */
 .hero {
-    font-size: clamp(20px, 10vw, 10px);
+    font-size: clamp(18px, 10vw, 10px);
     line-height: 1;
     display: inline-block;
-    color: #fff;
+    color: #f5f4f5;
     z-index: 2;
     letter-spacing: 10px;
 
     /* Bright things in dark environments usually cast that light, giving off a glow */
     filter: drop-shadow(0 1px 3px);
-}
-
-.hero-container {
-    position: relative;
-    padding: 200px 0;
-    text-align: center;
 }
 
 .glitch span {
@@ -41,30 +41,6 @@
 .glitch::after {
     animation: paths 5s step-end infinite, opacity 5s step-end infinite,
         font 7s step-end infinite, movement 8s step-end infinite;
-}
-
-.layers {
-    position: relative;
-}
-
-.layers::before,
-.layers::after {
-    content: attr(data-text);
-    position: absolute;
-    width: 110%;
-    z-index: -1;
-}
-
-.layers::before {
-    top: 10px;
-    left: 15px;
-    color: #e0287d;
-}
-
-.layers::after {
-    top: 5px;
-    left: -10px;
-    color: #1bc7fb;
 }
 
 @keyframes paths {
