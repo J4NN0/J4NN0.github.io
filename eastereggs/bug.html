@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <meta name="author" content="Federico Gianno"/>
+    <meta property="description" content="Hi, my name is Federico and I'm currently working as software engineer"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="J4NN0"/>
+    <meta property="og:url" content="https://j4nn0.github.io/"/>
+    <meta property="og:image" content="https://raw.githubusercontent.com/J4NN0/J4NN0.github.io/master/img/avatar.png"/>
+    <meta property="og:description" content="Swimmer, Software Engineer and Gamer. Not necessarily in this order."/>
+    <meta name="twitter:card" content=""/>
+    <meta name="twitter:site" content="@giannofederico"/>
+    <meta name="twitter:creator" content="@giannofederico"/>
+    <meta name="twitter:title" content="J4NN0 "/>
+    <meta name="twitter:description" content="Swimmer, Software Engineer and Gamer. Not necessarily in this order."/>
+    <meta name="twitter:image:src" content="https://raw.githubusercontent.com/J4NN0/J4NN0.github.io/master/img/avatar.png"/>
+    <meta property="profile:username" content="J4NN0"/>
+
+    <title>34573R 366</title>
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/bug.css" />
+    <link rel="shortcut icon" href="../img/bug.png" type="image/x-icon"/>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="header">
+          <li>
+            <a href="/" class="unselected">Home</a>
+          </li>
+          <li>
+            <a href="/projects" class="unselected">Projects</a>
+          </li>
+          <li>
+            <a href="/posts" class="unselected">Posts</a>
+          </li>
+          <li>
+            <a href="/contact" class="unselected">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div id="messenger"></div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        var Messenger = function(el) {
+            'use strict';
+            var m = this;
+
+            m.init = function() {
+                m.codeletters = "&#*+%?£@§$";
+                m.message = 0;
+                m.current_length = 0;
+                m.fadeBuffer = false;
+                m.messages = [
+                    '43 6F 6E 74 72 6F 6C 20 63 61 6E 20 73 6F 6D 65 74 69 6D 65 73 20 62 65 20 61 6E 20 69 6C 6C 75 73 69 6F 6E',
+                    '42 75 74 20 73 6F 6D 65 74 69 6D 65 73 20 79 6F 75 20 6E 65 65 64 20 69 6C 6C 75 73 69 6F 6E 73 20 74 6F 20 67 61 69 6E 20 63 6F 6E 74 72 6F 6C',
+                    '46 61 6E 74 61 73 79 20 69 73 20 61 6E 20 65 61 73 79 20 77 61 79 20 74 6F 20 67 69 76 65 20 6D 65 61 6E 69 6E 67 20 74 6F 20 77 6F 72 6C 64',
+                    '54 6F 20 63 6C 6F 61 6B 20 6F 75 72 20 68 61 72 73 68 20 72 65 61 6C 69 74 79 20 77 69 74 68 20 65 73 63 61 70 69 73 74 20 63 6F 6D 66 6F 72 74',
+                    '41 66 74 65 72 20 61 6C 6C 2C 20 69 73 6E 27 74 20 74 68 61 74 20 77 68 79 20 77 65 20 73 75 72 72 6F 75 6E 64 20 6F 75 72 73 65 6C 76 65 73 20 77 69 74 68 20 73 6F 20 6D 61 6E 79 20 73 63 72 65 65 6E 73 3F',
+                    '53 6F 20 77 65 20 63 61 6E 20 61 76 6F 69 64 20 73 65 65 69 6E 67 3F',
+                    '53 6F 20 77 65 20 63 61 6E 20 61 76 6F 69 64 20 65 61 63 68 20 6F 74 68 65 72 3F',
+                    '53 6F 20 77 65 20 63 61 6E 20 61 76 6F 69 64 20 74 72 75 74 68'
+                ];
+
+                setTimeout(m.animateIn, 100);
+            };
+
+            m.generateRandomString = function(length) {
+                var random_text = '';
+                while (random_text.length < length) {
+                    random_text += m.codeletters.charAt(Math.floor(Math.random() * m.codeletters.length));
+                }
+                return random_text;
+            };
+
+            m.animateIn = function() {
+                if (m.current_length < m.messages[m.message].length) {
+                    m.current_length = m.current_length + 2;
+                    if (m.current_length > m.messages[m.message].length) {
+                        m.current_length = m.messages[m.message].length;
+                    }
+
+                    var message = m.generateRandomString(m.current_length);
+                    $(el).html(message);
+
+                    setTimeout(m.animateIn, 20);
+                } else {
+                    setTimeout(m.animateFadeBuffer, 20);
+                }
+            };
+
+            m.animateFadeBuffer = function() {
+                if (m.fadeBuffer === false) {
+                    m.fadeBuffer = [];
+                    for (var i = 0; i < m.messages[m.message].length; i++) {
+                        m.fadeBuffer.push({
+                            c: (Math.floor(Math.random() * 12)) + 1,
+                            l: m.messages[m.message].charAt(i)
+                        });
+                    }
+                }
+
+                var do_cycles = false;
+                var message = '';
+
+                for (var i = 0; i < m.fadeBuffer.length; i++) {
+                    var fader = m.fadeBuffer[i];
+                    if (fader.c > 0) {
+                        do_cycles = true;
+                        fader.c--;
+                        message += m.codeletters.charAt(Math.floor(Math.random() * m.codeletters.length));
+                    } else {
+                        message += fader.l;
+                    }
+                }
+
+                $(el).html(message);
+
+                if (do_cycles === true) {
+                    setTimeout(m.animateFadeBuffer, 50);
+                } else {
+                    setTimeout(m.cycleText, 2000);
+                }
+            };
+
+            m.cycleText = function() {
+                m.message = m.message + 1;
+                if (m.message >= m.messages.length) {
+                    m.message = 0;
+                }
+
+                m.current_length = 0;
+                m.fadeBuffer = false;
+                $(el).html('');
+
+                setTimeout(m.animateIn, 200);
+            };
+
+            m.init();
+        };
+
+        console.clear();
+        var messenger = new Messenger($('#messenger'));
+    </script>
+
+    <footer class="footer">
+      <span>Swimmer, Software Engineer and Gamer. Not necessarily in this order.</span>
+    </footer>
+
+    <!---
+        01101000 01100101 01111000 01100001 01100100 01100101 01100011 01101001 01101101 01100001 01101100
+    -->
+
+  </body>
+</html>
