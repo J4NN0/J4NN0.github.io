@@ -23,7 +23,7 @@
     <title>34573R 366</title>
 
     <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/bat.css" />
+    <link rel="stylesheet" href="../css/batman.css" />
     <link rel="shortcut icon" href="../img/batman.png" type="image/x-icon"/>
   </head>
   <body>
@@ -48,6 +48,21 @@
 
     <section class="container">
       <div class="clock">
+        <img src="../img/batman_logo.png" class="clock-logo" alt="Batman Logo" />
+        <div class="numbers">
+          <span class="number number-1">1</span>
+          <span class="number number-2">2</span>
+          <span class="number number-3">3</span>
+          <span class="number number-4">4</span>
+          <span class="number number-5">5</span>
+          <span class="number number-6">6</span>
+          <span class="number number-7">7</span>
+          <span class="number number-8">8</span>
+          <span class="number number-9">9</span>
+          <span class="number number-10">10</span>
+          <span class="number number-11">11</span>
+          <span class="number number-12">12</span>
+        </div>
         <div class="hand hour-hand"></div>
         <div class="hand minute-hand"></div>
         <div class="center"></div>
@@ -62,7 +77,7 @@
           const hourDeg = (hours * 30) + (now.getMinutes() * 0.5);
           document.querySelector('.hour-hand').style.transform = `translateX(-50%) rotate(${hourDeg}deg)`;
         }
-
+      
         setInterval(updateClock, 1000);
         updateClock();
       </script>
