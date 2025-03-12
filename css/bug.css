@@ -1,5 +1,5 @@
-  /* Ensure the body structure is untouched */
-  body {
+/* Ensure the body structure is untouched */
+body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
