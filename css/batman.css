@@ -1,9 +1,10 @@
 .container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 110px;
-    position: center;
+    margin-top: 50px;
+    position: relative;
 }
 
 .clock {
@@ -23,7 +24,7 @@
     width: 80%;
     height: auto;
     opacity: 0.2;
-  }
+}
 
 .numbers {
     position: absolute;
@@ -132,4 +133,17 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+}
+
+.car-container {
+    width: 100%;
+    position: relative;
+    margin-top: 110px;
+}
+
+.car {
+    position: absolute;
+    width: 140px;
+    height: auto;
+    bottom: 0;
 }

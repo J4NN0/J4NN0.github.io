@@ -67,6 +67,10 @@
         <div class="hand minute-hand"></div>
         <div class="center"></div>
       </div>
+
+      <div class="car-container">
+        <img src="../img/matiz.png" class="car" alt="Car" />
+      </div>
     </section>
 
     <section class="container">
@@ -77,9 +81,28 @@
           const hourDeg = (hours * 30) + (now.getMinutes() * 0.5);
           document.querySelector('.hour-hand').style.transform = `translateX(-50%) rotate(${hourDeg}deg)`;
         }
-      
+
+        function moveCar() {
+          const car = document.querySelector('.car');
+          let direction = 1;
+
+          function animateCar() {
+            let maxWidth = window.innerWidth - 120;
+            let minWidth = 20;
+            let position = direction === 1 ? maxWidth : minWidth;
+            car.style.transition = `transform ${2 + Math.random() * 3}s linear`;
+            car.style.transform = `translateX(${position}px) scaleX(${direction})`;
+            direction *= -1;
+            setTimeout(animateCar, 3000 + Math.random() * 2000);
+          }
+
+          animateCar();
+        }
+        
         setInterval(updateClock, 1000);
         updateClock();
+
+        moveCar();
       </script>
     </section>
 
