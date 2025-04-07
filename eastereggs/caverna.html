@@ -87,11 +87,25 @@
           let direction = 1;
 
           function animateCar() {
-            let maxWidth = window.innerWidth - 120;
-            let minWidth = 20;
-            let position = direction === 1 ? maxWidth : minWidth;
-            car.style.transition = `transform ${2 + Math.random() * 3}s linear`;
-            car.style.transform = `translateX(${position}px) scaleX(${direction})`;
+            const screenWidth = window.innerWidth;
+            const fromLeft = -screenWidth;
+            const toRight = screenWidth;
+            const start = direction === 1 ? fromLeft : toRight;
+            const end = direction === 1 ? toRight : fromLeft;
+
+            car.style.transition = 'none';
+            car.style.transform = `translateX(${start}px) scaleX(${direction})`;
+
+            // Trigger reflow to apply initial position before animating
+            void car.offsetWidth;
+
+            const minVel = 2;
+            const maxVel = 8;
+            const velocity = Math.random() * (maxVel - minVel) + minVel;
+            
+            car.style.transition = `transform ${velocity}s linear`;
+            car.style.transform = `translateX(${end}px) scaleX(${direction})`;
+
             direction *= -1;
             setTimeout(animateCar, 3000 + Math.random() * 2000);
           }

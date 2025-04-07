@@ -147,4 +147,10 @@
     width: 350px;
     height: auto;
     bottom: 0;
+    left: 0;
+    transition: transform 2s linear;
+}
+
+body {
+  overflow-x: hidden;
 }
