@@ -1,0 +1,11 @@
+.year-tag {
+    display: inline-block;
+    background-color: #998fe5; /* or any color that fits your palette */
+    color: white;
+    padding: 6px 12px;
+    font-weight: bold;
+    border-radius: 20px;
+    margin: 20px 0;
+    font-size: 1.2rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  }
