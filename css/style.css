@@ -83,6 +83,7 @@ a {
 
 /* Typewriter Style */
 .logo-typewriter {
+  font-size: 1.2rem;
   font-family: 'Courier New', monospace;
   color: #f5f4f5;
   letter-spacing: 1px;
