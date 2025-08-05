@@ -57,8 +57,26 @@ a {
   text-decoration: none;
 }
 
-.underline {
-  color: #f5f4f5;
+/* PDF Icons */
+.pdf-link {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 5px;
+  color: #a9a1e0;
+  border: 1px solid #a9a1e0;
+  border-radius: 3px;
+  padding: 0px 5px;
+  font-size: 0.8em;
+  transition: all 0.2s ease;
+}
+
+.pdf-link:hover {
+  background-color: #a9a1e0;
+  color: #fff;
+}
+
+.pdf-link i {
+  margin-right: 3px;
 }
 
 /* Header */
@@ -120,7 +138,11 @@ li {
 }
 
 .unselected {
-  color: #f5f4f5b5;
+  color: #f5f4f5a6;
+}
+
+.underline {
+  color: #f5f4f5;
 }
 
 /* Footer */
