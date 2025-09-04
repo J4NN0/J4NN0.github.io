@@ -99,15 +99,22 @@ a {
   gap: 25px;
 }
 
-/* Logo Typewriter Style */
+/* J4NN0 Logo */
 .logo-typewriter {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-family: 'Courier New', monospace;
-  color: #f5f4f5;
-  letter-spacing: 1px;
+  color: #a9a1e0;
+  letter-spacing: 1.5px;
   font-weight: bold;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 0 8px rgba(169, 161, 224, 0.4);
   position: relative;
+  padding: 8px 12px;
+}
+
+.logo-typewriter::before {
+  content: '> ';
+  color: #998fe5;
+  font-weight: normal;
 }
 
 .logo-typewriter::after {
