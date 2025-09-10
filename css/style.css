@@ -80,9 +80,12 @@ a {
 }
 
 /* External Link Icon */
-.fa-external-link {
-  font-size: 0.82em;
-  margin-left: 0.5px;
+.right-nav .fa-external-link {
+  font-size: 0.65em;
+  margin-left: -3px;
+  vertical-align: middle;
+  display: inline-block;
+  line-height: 1;
 }
 
 /* Header */
