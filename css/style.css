@@ -79,13 +79,19 @@ a {
   margin-right: 3px;
 }
 
-/* External Link Icon */
+/* External Link Icon - Simple approach */
 .right-nav .fa-external-link {
-  font-size: 0.65em;
-  margin-left: -3px;
-  vertical-align: middle;
-  display: inline-block;
-  line-height: 1;
+  font-size: 0.65em !important;
+  margin-left: -2px !important;
+  vertical-align: 0.1em !important;
+  display: inline !important;
+}
+
+/* Specific targeting for Cooking link */
+.right-nav a[href*="grassado-food"] .fa-external-link {
+  font-size: 0.6em !important;
+  margin-left: -2px !important;
+  vertical-align: 0.2em !important;
 }
 
 /* Header */
