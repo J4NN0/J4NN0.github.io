@@ -79,6 +79,12 @@ a {
   margin-right: 3px;
 }
 
+/* External Link Icon */
+.fa-external-link {
+  font-size: 0.82em;
+  margin-left: 0.5px;
+}
+
 /* Header */
 .header {
   display: flex;
