@@ -57,28 +57,6 @@ a {
   text-decoration: none;
 }
 
-/* PDF Icons */
-.pdf-link {
-  display: inline-flex;
-  align-items: center;
-  margin-left: 5px;
-  color: #a9a1e0;
-  border: 1px solid #a9a1e0;
-  border-radius: 3px;
-  padding: 0px 5px;
-  font-size: 0.8em;
-  transition: all 0.2s ease;
-}
-
-.pdf-link:hover {
-  background-color: #a9a1e0;
-  color: #fff;
-}
-
-.pdf-link i {
-  margin-right: 3px;
-}
-
 /* External Link Icon - Simple approach */
 .right-nav .fa-external-link {
   font-size: 0.65em !important;
@@ -137,6 +115,63 @@ a {
   animation: blink 1s infinite;
 }
 
+/* J4NN0 Logo Hover Glitch Effect */
+.logo-typewriter:hover {
+  animation: logo-glitch 0.5s ease-in-out;
+}
+
+/* Keep the cursor blinking during glitch */
+.logo-typewriter:hover::after {
+  animation: blink 1s infinite;
+}
+
+@keyframes logo-glitch {
+  0% {
+    transform: translate(0);
+    filter: hue-rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, 1px);
+    filter: hue-rotate(90deg);
+  }
+  20% {
+    transform: translate(1px, -1px);
+    filter: hue-rotate(180deg);
+  }
+  30% {
+    transform: translate(-1px, -1px);
+    filter: hue-rotate(270deg);
+  }
+  40% {
+    transform: translate(1px, 1px);
+    filter: hue-rotate(360deg);
+  }
+  50% {
+    transform: translate(-1px, 1px);
+    text-shadow: 
+      -1px 0 #ff0000,
+      1px 0 #00ffff,
+      0 0 8px rgba(169, 161, 224, 0.6);
+  }
+  60% {
+    transform: translate(1px, -1px);
+  }
+  70% {
+    transform: translate(-1px, -1px);
+  }
+  80% {
+    transform: translate(1px, 1px);
+  }
+  90% {
+    transform: translate(-1px, 1px);
+  }
+  100% {
+    transform: translate(0);
+    filter: hue-rotate(0deg);
+    text-shadow: 0 0 8px rgba(169, 161, 224, 0.4);
+  }
+}
+
 @keyframes blink {
 
   0%,
@@ -175,35 +210,6 @@ li {
   padding-bottom: 20px;
   font-size: 12px;
   text-align: center;
-}
-
-/* Item Separator */
-.item-sep {
-  margin-top: 1.5rem !important;
-  margin-bottom: 1.5rem !important;
-  border: none;
-  border-top: 1px solid rgba(245, 244, 245, 0.3);
-  height: 0;
-}
-
-/* Demo Grid */
-.demo-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  padding-bottom: 5px;
-}
-
-.demo-item {
-  text-align: center;
-  width: 150px;
-}
-
-.demo-item img {
-  width: 100%;
-  aspect-ratio: 1;
-  object-fit: cover;
-  margin-bottom: 5px;
 }
 
 /* Media Query */

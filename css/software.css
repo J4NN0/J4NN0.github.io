@@ -1,0 +1,50 @@
+/* Demo Grid */
+.demo-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-bottom: 5px;
+}
+
+.demo-item {
+  text-align: center;
+  width: 150px;
+}
+
+.demo-item img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  margin-bottom: 5px;
+}
+
+/* Item Separator */
+.item-sep {
+  margin-top: 1.5rem !important;
+  margin-bottom: 1.5rem !important;
+  border: none;
+  border-top: 1px solid rgba(245, 244, 245, 0.3);
+  height: 0;
+}
+
+/* PDF Icons */
+.pdf-link {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 5px;
+  color: #a9a1e0;
+  border: 1px solid #a9a1e0;
+  border-radius: 3px;
+  padding: 0px 5px;
+  font-size: 0.8em;
+  transition: all 0.2s ease;
+}
+
+.pdf-link:hover {
+  background-color: #a9a1e0;
+  color: #fff;
+}
+
+.pdf-link i {
+  margin-right: 3px;
+}
