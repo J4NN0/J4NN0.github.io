@@ -4,21 +4,22 @@
   flex-wrap: wrap;
   gap: 10px;
   padding-bottom: 5px;
+  justify-content: space-evenly;
 }
 
 .demo-item {
   text-align: center;
   width: 180px;
-  padding: 8px;
 }
 
 .demo-item img {
-  width: 170px;
-  height: 150px;
+  width: 180px;
+  height: 160px;
   aspect-ratio: 5/4;
   object-fit: cover;
   object-position: top;
   margin-bottom: 8px;
+  margin-top: 8px;
 }
 
 /* Item Separator */
