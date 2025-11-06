@@ -57,7 +57,7 @@ a {
   text-decoration: none;
 }
 
-/* External Link Icon - Simple approach */
+/* External Link Icon */
 .right-nav .fa-external-link {
   font-size: 0.65em !important;
   margin-left: -2px !important;
@@ -65,7 +65,6 @@ a {
   display: inline !important;
 }
 
-/* Specific targeting for Cooking link */
 .right-nav a[href*="grassado-food"] .fa-external-link {
   font-size: 0.6em !important;
   margin-left: -2px !important;
@@ -118,58 +117,41 @@ a {
   animation: blink 1s infinite;
 }
 
-/* J4NN0 Logo Hover Glitch Effect */
 .logo-typewriter:hover {
-  animation: logo-glitch 0.5s ease-in-out;
+  animation: logo-glitch 0.8s ease-in-out;
 }
 
-/* Keep the cursor blinking during glitch */
 .logo-typewriter:hover::after {
   animation: blink 1s infinite;
 }
 
 @keyframes logo-glitch {
   0% {
-    transform: translate(0);
     filter: hue-rotate(0deg);
+    text-shadow: 0 0 8px rgba(169, 161, 224, 0.4);
   }
-  10% {
-    transform: translate(-1px, 1px);
-    filter: hue-rotate(90deg);
-  }
-  20% {
-    transform: translate(1px, -1px);
+  25% {
     filter: hue-rotate(180deg);
-  }
-  30% {
-    transform: translate(-1px, -1px);
-    filter: hue-rotate(270deg);
-  }
-  40% {
-    transform: translate(1px, 1px);
-    filter: hue-rotate(360deg);
-  }
-  50% {
-    transform: translate(-1px, 1px);
     text-shadow: 
-      -1px 0 #ff0000,
-      1px 0 #00ffff,
+      -3px 0 #ff0000,
+      3px 0 #00ffff,
       0 0 8px rgba(169, 161, 224, 0.6);
   }
-  60% {
-    transform: translate(1px, -1px);
+  50% {
+    filter: hue-rotate(360deg);
+    text-shadow: 
+      -2px 1px #ff0000,
+      2px -1px #00ffff,
+      0 0 8px rgba(169, 161, 224, 0.6);
   }
-  70% {
-    transform: translate(-1px, -1px);
-  }
-  80% {
-    transform: translate(1px, 1px);
-  }
-  90% {
-    transform: translate(-1px, 1px);
+  75% {
+    filter: hue-rotate(180deg);
+    text-shadow: 
+      2px -1px #ff0000,
+      -2px 1px #00ffff,
+      0 0 8px rgba(169, 161, 224, 0.6);
   }
   100% {
-    transform: translate(0);
     filter: hue-rotate(0deg);
     text-shadow: 0 0 8px rgba(169, 161, 224, 0.4);
   }
