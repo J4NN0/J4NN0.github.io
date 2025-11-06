@@ -78,9 +78,11 @@ a {
   justify-content: space-between;
   align-items: center;
 
-  width: 80%;
+  width: 95%;
   margin: 0 auto;
   padding-top: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .left-nav {
@@ -89,7 +91,8 @@ a {
 
 .right-nav {
   display: flex;
-  gap: 25px;
+  gap: 15px;
+  flex-wrap: wrap;
 }
 
 /* J4NN0 Logo */
@@ -212,7 +215,28 @@ li {
   text-align: center;
 }
 
-/* Media Query */
+/* Mobile-first responsive styles */
+@media screen and (max-width: 768px) {
+  .header {
+    width: 98%;
+    padding-left: 5px;
+    padding-right: 5px;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+  
+  .right-nav {
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .right-nav a {
+    font-size: 0.9em;
+  }
+}
+
+/* Desktop styles */
 @media screen and (min-width: 769px) {
   .container {
     max-width: 38rem;
@@ -221,5 +245,13 @@ li {
 
   .header {
     max-width: 38rem;
+    width: 80%;
+    padding-left: 0;
+    padding-right: 0;
+    flex-direction: row;
+  }
+  
+  .right-nav {
+    gap: 25px;
   }
 }
