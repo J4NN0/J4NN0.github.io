@@ -1,3 +1,17 @@
+figure > img,
+figure img:not(.row-img):not(.split-img):not(.split-img-large) {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+figure > img,
+figure img:not(.row-img):not(.split-img):not(.split-img-large) {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  object-fit: cover;
+  max-width: 100%;
+  height: auto;
+}
 /* Split image group: 2 stacked left, 1 large right */
 .image-split-group {
   margin: 2em 0;
