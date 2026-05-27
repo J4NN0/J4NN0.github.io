@@ -1,3 +1,78 @@
+/* Glitch Effect */
+.glitch-link {
+  text-decoration: none;
+  color: #f5f4f5;
+}
+
+.glitch-link:hover {
+  text-decoration: underline;
+}
+
+.glitch-text {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+}
+
+.glitch-text:hover {
+  animation: glitch 0.7s infinite;
+}
+
+@keyframes glitch {
+  0% {
+    text-shadow: none;
+    transform: skewX(0);
+  }
+  8% {
+    text-shadow: -2px 0 #ff0033, 2px 0 #00ffcc;
+    transform: skewX(0);
+  }
+  16% {
+    text-shadow: 2px 0 #ff0033, -2px 0 #00ffcc;
+    transform: skewX(0);
+  }
+  24% {
+    text-shadow: none;
+    transform: skewX(0);
+  }
+  32% {
+    text-shadow: -3px 0 #ff0033, 3px 0 #00ffcc;
+    transform: skewX(3deg);
+  }
+  40% {
+    text-shadow: 3px 0 #ff0033, -3px 0 #00ffcc;
+    transform: skewX(-2deg);
+  }
+  48% {
+    text-shadow: none;
+    transform: skewX(0);
+  }
+  56% {
+    text-shadow: -1px 0 #ff0033, 1px 0 #00ffcc;
+    transform: skewX(0);
+  }
+  64% {
+    text-shadow: none;
+    transform: skewX(0);
+  }
+  72% {
+    text-shadow: 2px 0 #ff0033, -2px 0 #00ffcc;
+    transform: skewX(2deg);
+  }
+  80% {
+    text-shadow: -1px 0 #ff0033, 1px 0 #00ffcc;
+    transform: skewX(0);
+  }
+  88% {
+    text-shadow: none;
+    transform: skewX(0);
+  }
+  100% {
+    text-shadow: none;
+    transform: skewX(0);
+  }
+}
+
 /* Swimming Wave Effect */
 .swim-wave {
   display: inline-block;
