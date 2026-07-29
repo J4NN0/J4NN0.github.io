@@ -5,11 +5,15 @@
   box-sizing: border-box;
 }
 
+html {
+  color-scheme: dark;
+}
+
 body {
-  background: #010101;
-  background: -webkit-linear-gradient(left, #010101, #121e2d);
-  background: -moz-linear-gradient(left, #010101, #121e2d);
-  background: linear-gradient(to right, #010101, #121e2d);
+  /* Keep color and image separate: the `background` shorthand resets
+     background-color, leaving mobile browsers no color to tint their toolbars with. */
+  background-color: #010101;
+  background-image: linear-gradient(to right, #010101, #121e2d);
 
   color: #f5f4f5;
 
