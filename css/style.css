@@ -10,10 +10,10 @@ html {
 }
 
 body {
-  /* Keep color and image separate: the `background` shorthand resets
-     background-color, leaving mobile browsers no color to tint their toolbars with. */
-  background-color: #010101;
-  background-image: linear-gradient(to right, #010101, #121e2d);
+  /* Flat, so mobile browsers can tint their toolbars the exact same color and the
+     page reads as one surface from top to bottom. Keep in sync with the
+     `theme-color` meta tag in every page. */
+  background-color: #0a1017;
 
   color: #f5f4f5;
 
