@@ -52,3 +52,26 @@
 .pdf-link i {
   margin-right: 3px;
 }
+
+/* On narrow screens two fixed 180px tiles don't fit side by side, so they
+   stacked one per row. Switch to fluid two-column tiles instead. */
+@media screen and (max-width: 768px) {
+  .demo-grid {
+    gap: 16px 12px;
+    justify-content: center;
+  }
+
+  .demo-item {
+    width: calc(50% - 6px);
+    font-size: 0.85em;
+  }
+
+  .demo-item img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    border-radius: 6px;
+    margin-top: 0;
+    margin-bottom: 6px;
+  }
+}
